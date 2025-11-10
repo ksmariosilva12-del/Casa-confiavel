@@ -1,24 +1,45 @@
-# 🏠 Casa dos Patrões - Jogador
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa dos Patrões - Jogador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à Casa dos Patrões</h1>
 
-**Casa dos Patrões** é um projeto web moderno e responsivo, desenvolvido para gerenciar pagamentos e escolhas de casas de apostas, com interface limpa e botões interativos.
+    <div class="payment-section">
+      <h2>Pagamento</h2>
+      <p>Escolha operadora:</p>
+      <button onclick="pagamento('eMola')">eMola - 867695532</button>
+      <button onclick="pagamento('MPesa')">MPesa - 850172616</button>
+      <p>Faça o pagamento manualmente. Obrigado!</p>
+    </div>
 
----
+    <div class="time-packages">
+      <h2>Escolha o tempo de uso</h2>
+      <button onclick="selecionarTempo(150, '2 horas')">150 Metcals / 2h</button>
+      <button onclick="selecionarTempo(200, '3 horas')">200 Metcals / 3h</button>
+      <button onclick="selecionarTempo(300, '5 horas')">300 Metcals / 5h</button>
+      <button onclick="selecionarTempo(500, '24 horas')">500 Metcals / 24h</button>
+      <button onclick="selecionarTempo(1500, '1 semana')">1500 Metcals / 1 semana</button>
+    </div>
 
-## 🌐 Acesso Online
+    <div class="betting-section">
+      <h2>Escolha a casa de apostas</h2>
+      <button onclick="selecionarCasa('Elefant Bet')">Elefant Bet</button>
+      <button onclick="selecionarCasa('888Bets')">888Bets</button>
+      <button onclick="selecionarCasa('Placard')">Placard</button>
+    </div>
 
-O site pode ser acessado online via **GitHub Pages**:  
-[🔗 Acessar Casa dos Patrões](https://seunome.github.io/CasaDosPatroes/)
+    <div class="graph-section">
+      <h2>Grafico do Aviator</h2>
+      <p id="mensagem" class="mensagem"></p>
+    </div>
+  </div>
 
----
-
-## 📝 Funcionalidades
-
-- Seleção de operadora para pagamento (eMola, MPesa).  
-- Escolha de pacotes de tempo para uso (2h, 3h, 5h, 24h, 1 semana).  
-- Seleção de casas de apostas (Elefant Bet, 888Bets, Placard).  
-- Mensagens interativas que mostram as escolhas do usuário.  
-- Layout responsivo e moderno, ideal para celulares e desktops.
-
----
-
-## 📂 Estrutura de Arquivos
+  <script src="script.js"></script>
+</body>
+</html>
