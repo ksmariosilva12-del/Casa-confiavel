@@ -1,1 +1,7 @@
-
+aviator-panel/
+├─ index.html
+├─ style.css
+├─ script.js
+├─ admin.html
+├─ admin-style.css
+└─ admin-script.js
