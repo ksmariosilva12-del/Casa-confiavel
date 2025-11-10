@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa dos Patrões - Jogador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à Casa dos Patrões</h1>
+
+    <div class="payment-section">
+      <h2>Pagamento</h2>
+      <p>Escolha operadora:</p>
+      <button onclick="pagamento('eMola')">eMola - 867695532</button>
+      <button onclick="pagamento('MPesa')">MPesa - 850172616</button>
+      <p>Faça o pagamento manualmente. Obrigado!</p>
+    </div>
+
+    <div class="time-packages">
+      <h2>Escolha o tempo de uso</h2>
+      <button onclick="selecionarTempo(150, '2 horas')">150 Metcals / 2h</button>
+      <button onclick="selecionarTempo(200, '3 horas')">200 Metcals / 3h</button>
+      <button onclick="selecionarTempo(300, '5 horas')">300 Metcals / 5h</button>
+      <button onclick="selecionarTempo(500, '24 horas')">500 Metcals / 24h</button>
+      <button onclick="selecionarTempo(1500, '1 semana')">1500 Metcals / 1 semana</button>
+    </div>
+
+    <div class="betting-section">
+      <h2>Escolha a casa de apostas</h2>
+      <button onclick="selecionarCasa('Elefant Bet')">Elefant Bet</button>
+      <button onclick="selecionarCasa('888Bets')">888Bets</button>
+      <button onclick="selecionarCasa('Placard')">Placard</button>
+    </div>
+
+    <div class="graph-section">
+      <h2>Grafico do Aviator</h2>
+      <p id="mensagem" class="mensagem"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
